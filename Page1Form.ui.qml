@@ -62,6 +62,11 @@ Page {
         target: someClass
         onPercentValueChanged: {
             progressBar.value = someClass.percentValue
+            if (someClass.percentValue === 100){
+                print("FUll 100%")
+            }else{
+                print("not full")
+            }
         }
     }
 }

@@ -33,7 +33,7 @@ void SomeClass::callMe(int timersleep)
     while (tmpValue < 100){
         tmpValue ++;
         setPercentValue(tmpValue);
-        QThread::msleep(10);
+        QThread::msleep(100);
         QCoreApplication::processEvents();
         qDebug() << "gia tri percent " << QString::number(m_percent, 'f', 2) << "%";
 
